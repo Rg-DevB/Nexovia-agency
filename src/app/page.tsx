@@ -1,5 +1,3 @@
-"use client";
-
 import Hero from "@/components/sections/hero";
 import Trust from "@/components/sections/trust";
 import CTASection from "@/components/sections/cta";
@@ -15,8 +13,19 @@ import WhyNexovia from "@/components/sections/why-nexovia";
 import TestimonialsCarousel from "@/components/sections/testimonials-carousel";
 import ServicesPreview from "@/components/sections/services-preview";
 import TestimonialsInfinite from "@/components/sections/testimonials-infinite";
+import type { Metadata } from "next";
 
-
+export const metadata: Metadata = {
+  title: "Accueil | Systèmes Digitaux Qui Génèrent des Clients",
+  description: "Nexovia conçoit et automatise des systèmes digitaux pour PME. Transformez votre site en machine d'acquisition clients 24/7 avec l'IA, l'automatisation et l'optimisation de conversion.",
+  keywords: ["automation IA", "chatbots intelligents", "optimisation conversion", "systèmes CRM", "développement web", "croissance PME", "génération leads", "automatisation business", "Next.js", "intégration Stripe"],
+  openGraph: {
+    title: "Accueil | Nexovia - Systèmes Digitaux",
+    description: "Transformez votre site web en machine d'acquisition clients 24/7.",
+    images: ["/og-image.png"]
+  },
+  alternates: { canonical: "/" }
+};
 
 export default function Home() {
   const fadeIn = { 

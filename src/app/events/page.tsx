@@ -6,6 +6,19 @@ import { motion } from "framer-motion";
 import { Calendar, Clock, MapPin, Users, ArrowRight, PlayCircle, Ticket } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Événements | Nexovia - Webinars & Workshops",
+  description: "Participez à nos webinars, workshops et masterclasses sur l'automatisation IA, les funnels de conversion et les systèmes CRM. Replay disponibles.",
+  keywords: ["événements nexovia", "webinar automation", "workshop conversion", "masterclass CRM", "formation IA", "replay webinar"],
+  openGraph: {
+    title: "Événements | Nexovia",
+    description: "Apprenez de nos experts. Webinars et workshops sur l'automatisation digitale.",
+    images: ["/og-image.png"]
+  },
+  alternates: { canonical: "/events" }
+};
 
 const events = [
   { id: 1, title: "Webinar: Automatisation IA 2026", type: "upcoming", date: "2026-02-15T18:00:00", duration: "60 min", location: "En ligne (Zoom)", attendees: 234, spots: 500, desc: "Découvrez les 5 workflows IA qui transforment les PME en licornes.", color: "from-accent to-blue-600" },

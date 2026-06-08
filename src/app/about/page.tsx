@@ -1,4 +1,17 @@
-export const metadata = { title: "About | Nexovia" };
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "À Propos | Nexovia - Notre Mission & Valeurs",
+  description: "Nexovia a été fondée avec une mission : éliminer les frictions digitales pour les entreprises en croissance. Nous combinons ingénierie frontend et automatisation backend.",
+  keywords: ["à propos nexovia", "mission nexovia", "équipe nexovia", "automatisation digitale", "ingénierie web", "croissance PME"],
+  openGraph: {
+    title: "À Propos | Nexovia",
+    description: "Notre mission : démocratiser l'automatisation de niveau entreprise pour les PME.",
+    images: ["/og-image.png"]
+  },
+  alternates: { canonical: "/about" }
+};
+
 export default function AboutPage() {
   return (
     <section className="max-w-3xl mx-auto px-6 py-24 text-center">

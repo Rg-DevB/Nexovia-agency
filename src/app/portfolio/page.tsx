@@ -5,14 +5,19 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import { cn } from "@/lib/utils";
 import BeforeAfterSlider from "@/components/before-after-slider";
+import type { Metadata } from "next";
 
-
-// Dans la boucle de tes projets
-<BeforeAfterSlider 
-  beforeSrc="/projects/auraretail-before.jpg" 
-  afterSrc="/projects/auraretail-after.jpg" 
-
-/>
+export const metadata: Metadata = {
+  title: "Portfolio | Nexovia - Nos Réalisations Concrètes",
+  description: "Découvrez nos projets : +50 systèmes déployés avec des résultats mesurables. Automatisation IA, optimisation conversion, CRM et monétisation.",
+  keywords: ["portfolio nexovia", "cas clients", "réalisations", "projets automation", "études de cas", "résultats clients"],
+  openGraph: {
+    title: "Portfolio | Nexovia",
+    description: "+50 systèmes déployés. Découvrez nos projets les plus impactants.",
+    images: ["/og-image.png"]
+  },
+  alternates: { canonical: "/portfolio" }
+};
 
 const projects = [
   { id: 1, title: "FinFlow SaaS", category: "automation", client: "FinTech Startup", stats: { conversion: "+127%", efficiency: "40h/m", roi: "340%" }, tags: ["Next.js", "Stripe", "AI Agents"], desc: "Automatisation complète du onboarding client avec qualification IA", color: "from-blue-500/20 to-cyan-500/20" },

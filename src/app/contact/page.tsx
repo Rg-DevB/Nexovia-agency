@@ -1,5 +1,18 @@
 import ContactForm from "@/components/contact-form";
-export const metadata = { title: "Contact | Nexovia" };
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact | Nexovia - Démarrer Votre Projet",
+  description: "Contactez Nexovia pour un audit gratuit. Notre équipe d'experts vous répond sous 4 heures. Transformez votre présence digitale dès aujourd'hui.",
+  keywords: ["contact nexovia", "audit gratuit", "devis automation", "consultation digitale", "hello@nexovia.io"],
+  openGraph: {
+    title: "Contact | Nexovia",
+    description: "Réservez votre audit stratégique gratuit. Réponse sous 4 heures.",
+    images: ["/og-image.png"]
+  },
+  alternates: { canonical: "/contact" }
+};
+
 export default function ContactPage() {
   return (
     <section className="max-w-4xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center">

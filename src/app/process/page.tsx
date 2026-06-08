@@ -2,6 +2,19 @@
 import { motion } from "framer-motion";
 import { Calendar, FileText, Code, Rocket, TrendingUp } from "lucide-react";
 import FAQAccordion from "@/components/sections/faq-accordion";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Notre Processus | Nexovia - Méthodologie Transparente",
+  description: "Découvrez notre méthodologie en 5 étapes : audit, architecture, développement, launch et optimisation. Un processus transparent et orienté résultats.",
+  keywords: ["processus nexovia", "méthodologie", "audit digital", "développement web", "optimisation continue", "accompagnement PME"],
+  openGraph: {
+    title: "Notre Processus | Nexovia",
+    description: "De l'idée au système autonome. Découvrez notre méthodologie éprouvée.",
+    images: ["/og-image.png"]
+  },
+  alternates: { canonical: "/process" }
+};
 
 const steps = [
   {

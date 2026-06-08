@@ -1,6 +1,17 @@
 import ServiceDetail from "@/components/sections/service-detail";
+import type { Metadata } from "next";
 
-export const metadata = { title: "Services | Nexovia" };
+export const metadata: Metadata = {
+  title: "Nos Services | Nexovia - Solutions de Croissance Digitale",
+  description: "Découvrez nos services d'automatisation IA, optimisation de conversion, systèmes CRM et développement web. Des solutions complètes pour transformer votre présence digitale.",
+  keywords: ["services automation", "chatbots IA", "optimisation conversion", "CRM personnalisé", "développement web", "intégration Stripe", "analytics", "A/B testing", "funnels de vente"],
+  openGraph: {
+    title: "Nos Services | Nexovia",
+    description: "Systèmes de croissance complets : automatisation IA, conversion, CRM et monétisation.",
+    images: ["/og-image.png"]
+  },
+  alternates: { canonical: "/services" }
+};
 
 const servicesData = [
   {
