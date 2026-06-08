@@ -1,0 +1,30 @@
+# Robots.txt pour Nexovia
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://nexovia.io/sitemap.xml
+
+# Interdire l'accès aux zones sensibles
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+
+# Google Bot spécifique
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing Bot
+User-agent: Bingbot
+Allow: /
+
+# Optimisation pour les crawlers IA
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /

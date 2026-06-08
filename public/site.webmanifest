@@ -1,0 +1,19 @@
+{
+  "name": "Nexovia",
+  "short_name": "Nexovia",
+  "description": "Digital Systems That Generate Clients",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ],
+  "categories": ["business", "technology"],
+  "lang": "fr-FR"
+}
