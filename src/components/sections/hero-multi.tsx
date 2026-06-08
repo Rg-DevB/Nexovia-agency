@@ -111,7 +111,7 @@ const ClassicHero = () => (
         
         <Link href="/portfolio" className="group inline-flex items-center justify-center gap-2 px-9 py-4.5 rounded-full border border-border/60 hover:border-accent/50 hover:bg-card/50 transition-all text-muted hover:text-foreground backdrop-blur-sm">
           <span>View Case Studies</span>
-          <ArrowUpRight size={18} className="opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
+          <ArrowRight size={18} className="opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
         </Link>
       </motion.div>
 
